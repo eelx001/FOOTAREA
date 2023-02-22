@@ -5,7 +5,7 @@ const options = {
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 	}
 };
-fetch('https://football98.p.rapidapi.com/botola/results', options).then( Response => {return Response.json()}).then(data=>{
+fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Response => {return Response.json()}).then(data=>{
 
 	
 	
@@ -16,32 +16,23 @@ fetch('https://football98.p.rapidapi.com/botola/results', options).then( Respons
 		for (let i = 0; i < data.length; i++){
 			
 			
-			console.log(data[0])
+			console.log(data)
 			
 			
 			
-			var table = document.getElementById("ty")
-			
-			
+			var table = document.getElementById("table-body")
+			const goalDifference = data['Goal Difference'];
 			
 			var row = `
 			
-			<div class="col-md-4 team team-left">
-                <h3 class="team-name"><img src="${data[i].awayLogo}" width="28%"></h3>
-                <h1 class="team-score">${data[i]}</h1>
-              </div>
-			  	
-              <div class="col-md-2 d-flex align-items-center justify-content-center">
-			  <center style="color:black;background-color:red;border:0px;border-radius:5px;">Live</center>
-			  	
-		
-                <h4 class="sus">VS</h4>
-              </div>
-              <div class="col-md-5 team team-right">
-                <h3 class="team-name"><img src="${data.Matchday_13[i].homeLogo}" width="22%"></h3>
-                <h1 class="team-score">${data[i]}</h1>
-              </div>
-				
+            	<tr>
+					<td>${data[i].Position}</td>
+					<td><img src="${data[i].SquadLogo}"><p>${data[i].Name}</p></td>
+					<td>${data[i].Played}</td>
+					<td>${data[i]["Goal Difference"]}</td>	
+					<td>${data[i].Points}</td>
+        		</tr>
+			 
 					`
 		
 		
@@ -58,3 +49,114 @@ fetch('https://football98.p.rapidapi.com/botola/results', options).then( Respons
             })
             
             
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+            
+
+
+
+
+
+
+
+
+
+
+			const leagues = document.querySelectorAll('.leagues');
+			const drops = document.querySelectorAll('.drop');
+			let index = 0;
+			
+			// Adding opacity to first drop on first time
+			
+			drops[0].style.opacity='1'
+			
+			// positioning the leagues
+			
+			leagues.forEach((slide,index)=>{
+			  slide.style.left=`${index*100}%`
+			});
+			
+			
+			// move slide function
+			
+			const moveSlide = () =>{
+			  leagues.forEach((slide)=>{
+				slide.style.transform=`translateX(-${index*100}%)`;
+			  });
+			}
+			
+			// remove drops opacity 1 from all drops
+			
+			const removeDotsOpacity = () =>{
+			  drops.forEach((drop)=>{
+				drop.style.opacity='.2';
+			  });
+			}
+			
+			drops.forEach((drop,i)=>{
+			  drop
+			  .addEventListener("click",(e)=>{
+				index=i;
+				removeDotsOpacity();
+				e.target.style.opacity='1'
+				moveSlide();
+			  })
+			});
+			
+			
+			
+			// auto play slide
+			
+			const autoPlaySlide = () =>{
+			  removeDotsOpacity();
+			  if(index===leagues.length-1) index= -1;
+			  index++;
+			  drops[index].style.opacity='1'
+			  moveSlide();
+			}
+			
+			window.onload=()=>{
+			  setInterval(autoPlaySlide,6000);
+			}
+			
+			
+			

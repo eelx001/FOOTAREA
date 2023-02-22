@@ -40,28 +40,6 @@ dots.forEach((dot,i)=>{
   })
 });
 
-// show the previous slide
-
-prevBtn.addEventListener('click',()=>{
-  if(index===0) return index;
-  index--;
-  removeDotsOpacity();
-  dots[index].style.opacity='1'
-  moveSlide();
-});
-
-// show the next slide
-
-nextBtn.addEventListener('click',()=>{
-  if(index===slides.length-1) return index;
-  index++;
-  removeDotsOpacity();
-  dots[index].style.opacity='1'
-  moveSlide();
-});
-
-// auto play slide
-
 const autoPlaySlide = () =>{
   removeDotsOpacity();
   if(index===slides.length-1) index= -1;
@@ -71,5 +49,8 @@ const autoPlaySlide = () =>{
 }
 
 window.onload=()=>{
-  setInterval(autoPlaySlide,6000);
+  setInterval(autoPlaySlide,4000);
 }
+
+
+

@@ -20,17 +20,17 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 			
 			
 			
-			var table = document.getElementById("table-body")
-			const goalDifference = data['Goal Difference'];
+			var table = document.getElementById("tb")
+			
 			
 			var row = `
 			
-            	<tr>
-					<td>${data[i].Position}</td>
-					<td><img src="${data[i].SquadLogo}"><p>${data[i].Name}</p></td>
-					<td>${data[i].Played}</td>
-					<td>${data[i]["Goal Difference"]}</td>	
-					<td>${data[i].Points}</td>
+            	<tr class="hov">
+					<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+					<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+					<td style="font-size:15px;">${data[i].Played}</td>
+					<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+					<td style="font-size:15px;">${data[i].Points}</td>
         		</tr>
 			 
 					`
@@ -112,7 +112,7 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 			// positioning the leagues
 			
 			leagues.forEach((slide,index)=>{
-			  slide.style.left=`${index*100}%`
+			slide.style.left=`${index*100}%`
 			});
 			
 			
@@ -146,17 +146,17 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 			
 			// auto play slide
 			
-			const autoPlaySlide = () =>{
-			  removeDotsOpacity();
-			  if(index===leagues.length-1) index= -1;
-			  index++;
-			  drops[index].style.opacity='1'
-			  moveSlide();
-			}
+			// const autoPlaySlide = () =>{
+			//   removeDotsOpacity();
+			//   if(index===leagues.length-1) index= -1;
+			//   index++;
+			//   drops[index].style.opacity='1'
+			//   moveSlide();
+			// }
 			
-			window.onload=()=>{
-			  setInterval(autoPlaySlide,6000);
-			}
+			// window.onload=()=>{
+			//   setInterval(autoPlaySlide,6000);
+			// }
 			
 			
 			

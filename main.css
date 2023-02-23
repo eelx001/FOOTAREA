@@ -445,15 +445,17 @@ section {
 
 
 .slider-wrapper{
-  width: 23%;
+  
+  width: 24%;
   height: 410px;
   display: flex;
   position: relative;
   margin: auto;
   overflow: hidden;
   margin-left: 85%;
-  margin-top: -1132px;
-  border-radius: 20px;
+  margin-top: -2379px;
+  border-radius:30px 30px 30px 30px;
+  
 }
 
 
@@ -645,50 +647,49 @@ footer.footer-distributed ,a {
 
 
 
-
-
-
 .slider-league{
-  width: 19%;
-  height:700px;
+  width: 24%;
+  height:1600px;
   display: flex;
   position: relative;
   margin: auto;
   overflow: hidden;
-  margin-left: 78%;
-  margin-top: 10%;
+  margin-left: 85%;
+  margin-top: -32%;
+  box-sizing: content-box;
+  border-radius: 19px;
 }
 
 
 .leagues{
   width: 100%;
-  height:100%;
-  background: #FEFBF6;
-  border-radius: 2%;
+  background: #111111;
+  border-radius: 0.5%;
   position: absolute;
   transition: transform .4s ease-in-out;
+  color: white;
 }
 .leagues h1{
-  color: #000000;
+  color: white;
   align-items: center;
   column-gap: 12px;
   padding: 15px;
-  font-size: 18px;
+  font-size: 20px;
+  margin-left: 2%;
 }
 
 .leagues .league {
-  color: #000000;
+  color: white;
   column-gap: 12px;
   font-size: 18px;
-  margin-top: -15%;
-  margin-left: 12%;
+  margin-top: -14%;
+  margin-left: 14%;
 }
 
 .leagues img{
-  width: 17%;
-  height: 5%;
+  width: 20%;
+  height: 8%;
   object-fit: cover;
-  border-radius: 100%;
   display: block;
   margin: 0 auto;
   margin-right: 35px;
@@ -696,55 +697,64 @@ footer.footer-distributed ,a {
 
 .leagues .flag {
   width: 9%;
-  height: 2%;
+  height: 3%;
   object-fit: cover;
-  border-radius: 70%;
+  border-radius: 50%;
   margin: 0 auto;
-  margin-left: 5%;
+  margin-left: 7%;
   margin-top: -15%;
 }
 
 .leagues .content-table {
   border-collapse: collapse;
-  margin: 25px 0;
-  font-size: 0.7em;
-  min-width: 50px;
+  border-spacing: 4px;
+  margin: 28px 0;
+  font-size: 0.6em;
+  min-width: 266px;
   overflow: hidden;
-  font-weight: bold;
 }
+
 
 .content-table thead tr th {
   background-color: #70B247;
-  
+  padding-left: 3%;  
   }
 
-.content-table thead tr {
+  .content-table tbody tr td {
+    padding-left: 3.5%;  
+    padding-top: -15%;
+    }
+
+
+
+.content-table thead  {
   background-color: #70B247;
   border-radius: 9px 9px 0 0;
   color: #ffffff;
   text-align: left;
-  font-weight: bold;
+  font-family: 'Oswald', sans-serif;
 }
 
 .content-table th,
 .content-table td {
-    padding: 9px 11px;
+    padding: 4px 4px;
 }
 
 .content-table td img {
   width: 30px;
   object-fit: cover;
-  border-radius: 70%;
   margin: 0 auto;
-  margin-left: -70%;
-  margin-top: -1%;
+  margin-left: -18%;
+  margin-top: 12%;
 }
 
 .content-table td p {
   color: #000000;
-  font-size: 18px;
-  margin-top: -43%;
-  margin-left: -4%;
+  font-size: 15px;
+  margin-top: -22%;
+  margin-left: 14%;
+  white-space: nowrap;
+  font-weight: 500;
 }
 
 
@@ -765,14 +775,14 @@ footer.footer-distributed ,a {
 .drops .drop{
   width: 0.6rem;
   height: 0.6rem;
-  background-color: black;
+  background-color: #70B247;
   opacity: .18;
   border-radius: 50%;
   transition: opacity .2s ease-in-out;
   cursor: pointer;
 }
 
-@media screen and (max-width:950px) {
+/* @media screen and (max-width:950px) {
   .slider-league{
     width: 35%;
   }
@@ -782,4 +792,4 @@ footer.footer-distributed ,a {
   .slider-league{
     width: 35%;
   }
-}
+} */

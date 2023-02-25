@@ -1,8 +1,9 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '9cae026bbdmsh4e383cba949a930p15f892jsn2d136318cb43',
+		'X-RapidAPI-Key': '04dfc0fa29mshd62f5282542f24bp1d4da4jsn22906914470b',
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
+		
 	}
 };
 fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Response => {return Response.json()}).then(data=>{
@@ -48,54 +49,183 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 
             })
             
-            
+        
+fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response => {return Response.json()}).then(data=>{
+
+	
+	
+	function cool(data){
+    
+    
+
+		for (let i = 0; i < data.length; i++){
+			
+			
+			console.log(data)
+			
+			
+			
+			var table = document.getElementById("ts")
+			
+			
+			var row = `
+			
+            	<tr class="hov">
+					<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+					<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+					<td style="font-size:15px;">${data[i].Played}</td>
+					<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+					<td style="font-size:15px;">${data[i].Points}</td>
+        		</tr>
+			 
+					`
+		
+		
+			table.innerHTML += row
+		}
+		}   
+	  cool(data);
+	
 
 
 
 
 
+            })
+
+
+	fetch('https://football98.p.rapidapi.com/seriea/table', options).then( Response => {return Response.json()}).then(data=>{
+
+	
+	
+	function cool(data){
+    
+    
+
+		for (let i = 0; i < data.length; i++){
+			
+			
+			console.log(data)
+			
+			
+			
+			var table = document.getElementById("tit")
+			
+			
+			var row = `
+			
+            	<tr class="hov">
+					<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+					<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+					<td style="font-size:15px;">${data[i].Played}</td>
+					<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+					<td style="font-size:15px;">${data[i].Points}</td>
+        		</tr>
+			 
+					`
+		
+		
+			table.innerHTML += row
+		}
+		}   
+	  cool(data);
+	
+
+	  
 
 
 
+            })
 
 
 
+			fetch('https://football98.p.rapidapi.com/ligue1ubereats/table', options).then( Response => {return Response.json()}).then(data=>{
+
+	
+	
+			function cool(data){
+			
+			
+		
+				for (let i = 0; i < data.length; i++){
+					
+					
+					console.log(data)
+					
+					
+					
+					var table = document.getElementById("tfr")
+					
+					
+					var row = `
+					
+						<tr class="hov">
+							<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+							<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+							<td style="font-size:15px;">${data[i].Played}</td>
+							<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+							<td style="font-size:15px;">${data[i].Points}</td>
+						</tr>
+					 
+							`
+				
+				
+					table.innerHTML += row
+				}
+				}   
+			  cool(data);
+			
+		
+	
+		
+		
+		
+					})
 
 
 
+	fetch('https://football98.p.rapidapi.com/eredivisie/table', options).then( Response => {return Response.json()}).then(data=>{
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-            
-
-
-
-
-
+	
+	
+			function cool(data){
+			
+			
+		
+				for (let i = 0; i < data.length; i++){
+					
+					
+					console.log(data)
+					
+					
+					
+					var table = document.getElementById("tho")
+					
+					
+					var row = `
+					
+						<tr class="hov">
+							<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+							<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+							<td style="font-size:15px;">${data[i].Played}</td>
+							<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+							<td style="font-size:15px;">${data[i].Points}</td>
+						</tr>
+					 
+							`
+				
+				
+					table.innerHTML += row
+				}
+				}   
+			  cool(data);
+			
+		
+			  
+		
+		
+		
+					})
 
 
 
@@ -142,21 +272,6 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 			  })
 			});
 			
-			
-			
-			// auto play slide
-			
-			// const autoPlaySlide = () =>{
-			//   removeDotsOpacity();
-			//   if(index===leagues.length-1) index= -1;
-			//   index++;
-			//   drops[index].style.opacity='1'
-			//   moveSlide();
-			// }
-			
-			// window.onload=()=>{
-			//   setInterval(autoPlaySlide,6000);
-			// }
 			
 			
 			

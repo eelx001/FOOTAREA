@@ -49,7 +49,7 @@ const autoPlaySlide = () =>{
 }
 
 window.onload=()=>{
-  setInterval(autoPlaySlide,4000);
+  setInterval(autoPlaySlide,2000);
 }
 
 

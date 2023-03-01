@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': '04dfc0fa29mshd62f5282542f24bp1d4da4jsn22906914470b',
+		'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 		
 	}
@@ -185,6 +185,51 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 
 
 	fetch('https://football98.p.rapidapi.com/eredivisie/table', options).then( Response => {return Response.json()}).then(data=>{
+
+	
+	
+			function cool(data){
+			
+			
+		
+				for (let i = 0; i < data.length; i++){
+					
+					
+					console.log(data)
+					
+					
+					
+					var table = document.getElementById("tho")
+					
+					
+					var row = `
+					
+						<tr class="hov">
+							<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
+							<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
+							<td style="font-size:15px;">${data[i].Played}</td>
+							<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
+							<td style="font-size:15px;">${data[i].Points}</td>
+						</tr>
+					 
+							`
+				
+				
+					table.innerHTML += row
+				}
+				}   
+			  cool(data);
+			
+		
+			  
+		
+		
+		
+					})
+
+
+
+		fetch('https://football98.p.rapidapi.com/botola/results', options).then( Response => {return Response.json()}).then(data=>{
 
 	
 	

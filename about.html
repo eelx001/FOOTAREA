@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="stylesheet" href="main.css">
+    <title></title>
+</head>
+<body>
+<style>
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  text-align: center;
+  background-color: #70b24700;
+  color: rgb(255, 255, 255);
+  border: 0px solid;
+  border-radius: 40px;
+    margin-right: -4%;
+}
+.light-theme .about-section {
+    color:#75dd34 ;
+}
+.light-theme p {
+    color:#75dd34 ;
+}
+.light-theme h5{
+    color:black;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+@media screen and (max-width:1326px) {
+    .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #70b24700;
+        color:#75dd34 ;
+        border: 0px solid;
+        border-radius: 40px;
+        margin-right: -4%;
+}
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+  .navigation{
+    font-size: 20%;
+  }
+}
+
+
+</style>
+    <div class="container">
+        <div class="theme-switch">
+        <div class="switch"></div>
+        </div>
+        <br>
+        <div class="navigation">
+                <ul>
+                    <a href="#" class="active" >Home</a>
+                    <a href="#" target="">News</a>
+                    <a href="#" target="">Matches</a>
+                    <a href="#" target="">About us</a>
+                    <a href="#" target="">Contact us</a>
+                </ul>
+          
+        </div>
+ 
+        <center><h1 style="color:#70B247;">About Us</h1></center>
+        <div class="about-section">
+            <br>
+            <h5 class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum optio eaque accusantium. Id architecto placeat officia aliquid sequi. Illum doloremque soluta mollitia officiis animi aperiam harum rerum maxime accusamus incidunt.</h5>
+            <br>
+            </div>
+
+            <h2 style="text-align:centerc;color:#70B247;">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/3.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Jane Doe</h2>
+        <p class="title">CEO & Founder</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, minus reprehenderit! Expedita impedit vitae neque laudantium, nulla minima excepturi vel, exercitationem ullam dolorum omnis quod natus cum vero rem ab.</p>
+        <p>jane@example.com</p>
+        <div class="">
+
+
+          <a href="#" style="font-size: 160%;"><i class="fa fa-linkedin"></i></a>
+          &nbsp; &nbsp; &nbsp;
+          <a href="#" style="font-size: 160%;"><i class="fa fa-github"></i></a>
+    
+        </div>  
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/3.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Mike Ross</h2>
+        <p class="title">Art Director</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero reprehenderit est sapiente cum, in obcaecati quis cupiditate accusamus minima asperiores ipsam suscipit consequatur incidunt ex laudantium omnis qui dolores magni.</p>
+        <p>mike@example.com</p>
+        <div class="">
+
+
+          <a href="#" style="font-size: 160%;"><i class="fa fa-linkedin"></i></a>
+          &nbsp; &nbsp; &nbsp;
+          <a href="#" style="font-size: 160%;"><i class="fa fa-github"></i></a>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="/3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>John Doe</h2>
+        <p class="title">Designer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet cum aliquam libero asperiores ipsum sapiente fugit cumque facere error repellat. Aliquid ex inventore dicta. Sequi aliquam inventore molestias omnis dolorem?</p>
+        <p>john@example.com</p>
+       
+        <div class="">
+
+
+          <a href="#" style="font-size: 160%;"><i class="fa fa-linkedin"></i></a>
+          &nbsp; &nbsp; &nbsp;
+          <a href="#" style="font-size: 160%;"><i class="fa fa-github"></i></a>
+    
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<footer class="footer-distributed">
+
+  <div class="footer-left">
+
+    <h3><span><img style="height: 8vh;position: absolute;" class="favfot" src="/favlight.png" alt=""><img style="height: 11vh;" class="favfotdark" src="/fav.png" alt="" srcset=""></span></h3>
+
+    <p class="footer-links">
+      <a href="#" class="link-1">Home</a>
+
+      <a href="#">News</a>
+
+      <a href="#">Matches</a>
+
+      <a href="#">About us</a>
+
+      <a href="#">Contact us</a>
+    </p>
+
+    <p class="footer-company-name">FOOTAREA TEAM © 2023</p>
+  </div>
+
+  <div class="footer-center">
+
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+212 675 275 835</p>
+    </div>
+
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:support@company.com">mehdimedy12@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <div class="footer-right">
+
+    <p  class="footer-company-about">
+      <span>About the FootArea</span>
+      is an essential resource for fans of the sport. It provides a wealth of information about the sport and allows fans to keep up-to-date with the latest news and scores.
+    </p>
+
+    <div class="footer-icons">
+
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      <a href="#"><i class="fa fa-linkedin"></i></a>
+      <a href="#"><i class="fa fa-github"></i></a>
+
+    </div>
+
+  </div>
+
+</footer>
+           
+       
+
+
+<div class="slider-wrapper">
+  <div class="dots">
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <div class="slides">
+    <h1>Trending News</h1>
+    <img src="1.jpg" alt="nature">
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h4 class="time">90 min about 2 hours ago</h4>
+    <a href="" class="sidesi"  ><h3 class="world">See More</h3></a>
+  </div>
+  <div class="slides">
+    <h1>Trending News</h1>
+    <img src="2.jpg" alt="nature">
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h4 class="time">90 min about 2 hours ago</h4>
+    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+  </div>
+  <div class="slides">
+    <h1>Trending News</h1>
+    <img src="3.jpg" alt="nature">
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h4 class="time">90 min about 2 hours ago</h4>
+    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+  </div>
+  <div class="slides">
+    <h1>Trending News</h1>  
+    <img src="1.jpg" alt="nature">
+    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <h4 class="time">90 min about 2 hours ago</h4>
+    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+</div>
+<div class="slides">
+  <h1>Trending News</h1>
+  <img src="1.jpg" alt="nature">
+  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <h4 class="time">90 min about 2 hours ago</h4>
+  <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+</div>
+
+</div>
+
+
+
+
+
+
+</body>
+<script>
+    $(".theme-switch").on("click", () => {
+  $("body").toggleClass("light-theme");
+});
+$(document).ready(function($) {
+    $(".table-row").click(function() {
+        window.document.location = $(this).data("href");
+    });
+});
+</script>
+
+<script src="/script.js"></script>
+<script src="/index.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+</html>

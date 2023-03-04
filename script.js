@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
+		//'X-RapidAPI-Key': 'dd69c349d0mshbee3f418d4f4712p1ad8a1jsnf559438e2047',
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 		
 	}
@@ -17,7 +17,6 @@ fetch('https://football98.p.rapidapi.com/premierleague/table', options).then( Re
 		for (let i = 0; i < data.length; i++){
 			
 			
-			console.log(data)
 			
 			
 			
@@ -61,9 +60,6 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 		for (let i = 0; i < data.length; i++){
 			
 			
-			console.log(data)
-			
-			
 			
 			var table = document.getElementById("ts")
 			
@@ -105,7 +101,6 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 		for (let i = 0; i < data.length; i++){
 			
 			
-			console.log(data)
 			
 			
 			
@@ -150,7 +145,6 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 				for (let i = 0; i < data.length; i++){
 					
 					
-					console.log(data)
 					
 					
 					
@@ -195,7 +189,6 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 				for (let i = 0; i < data.length; i++){
 					
 					
-					console.log(data)
 					
 					
 					
@@ -221,58 +214,79 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 			  cool(data);
 			
 		
-			  
-		
-		
-		
 					})
 
 
+					const options4 = {
+						method: 'GET',
+						headers: {
+							'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
+							'X-RapidAPI-Host': 'football98.p.rapidapi.com'
+						}
+					};
+					fetch('https://football98.p.rapidapi.com/premierleague/fixtures', options4).then( Response => {return Response.json()}).then(data=>{
 
-		fetch('https://football98.p.rapidapi.com/botola/results', options).then( Response => {return Response.json()}).then(data=>{
-
-	
-	
-			function cool(data){
-			
-			
-		
-				for (let i = 0; i < data.length; i++){
+						function cool(data){
+						
+							
+							console.log(data);
 					
+							for (let i = 0; i < data[0][" Matchday 27 "].length; i++){
+								
+								
+								
+								
+								
+								var table = document.getElementById("tablelive")
+								
+								
+								var row = `
+								
+								
+							  <tbody id="tmatch">
+								<tr>
+								  <td>
+									<div class="matche">
+									<div class="match-content">
+										<div class="team team--home">
+										  <div class="team-logo">
+											<img src="${data[0][" Matchday 27 "][i].homeLogo}"/>
+										  </div>
+										  <h2 class="team-name">${data[0][" Matchday 27 "][i].homeTeam}</h2>
+										</div>
+										<div class="match-details">
+										  <strong></strong>
+										  <div class="match-score">
+											<span class="match-score-number"></span>
+											<span class="match-score-divider"></span>
+											<span class="match-score-number"></span>
+										  </div>
+										  <div class="match-time-lapsed">${data[0][" Matchday 27 "][i].MatchDay}</div>
+										</div>
+										<div class="team-away">
+										  <div class="away-logo">
+											<img src="${data[0][" Matchday 27 "][i].awayLogo}" /></div>
+											<h2 class="team-awayname">${data[0][" Matchday 27 "][i].awayTeam}</h2>
+										</div>
+									  </div>
+									  </div>
+								  </td>
+								</tr>
+							  </tbody>
+								 <br>
+								 <br>
+										`
+							
+							
+								table.innerHTML += row
+							}
+							}   
+						  cool(data);
+						
 					
-					console.log(data)
-					
-					
-					
-					var table = document.getElementById("tho")
-					
-					
-					var row = `
-					
-						<tr class="hov">
-							<td style="font-size:15px;" border:1px white;>${data[i].Position}</td>
-							<td><img src="${data[i].SquadLogo}"><p style="color:white;font-wheight:300;">${data[i].Name}</p></td>
-							<td style="font-size:15px;">${data[i].Played}</td>
-							<td style="font-size:15px;">${data[i]["Goal Difference"]}</td>	
-							<td style="font-size:15px;">${data[i].Points}</td>
-						</tr>
-					 
-							`
-				
-				
-					table.innerHTML += row
-				}
-				}   
-			  cool(data);
-			
-		
-			  
-		
-		
-		
-					})
-
-
+								})					
+							
+								
 
 
 
@@ -280,7 +294,7 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 			const drops = document.querySelectorAll('.drop');
 			let index = 0;
 			
-			// Adding opacity to first drop on first time
+			 
 			
 			drops[0].style.opacity='1'
 			

@@ -86,7 +86,12 @@
    color: #ffffff !important;
    border-radius: 15px !important; 
  }
- 
+ .card {
+  /* border-radius: 23px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+  border-radius: 0px 0px 25px 25px;
+}
 
  
 
@@ -453,8 +458,8 @@ section {
   margin: auto;
   overflow: hidden;
   margin-left: 85%;
-  margin-top: -2379px;
-  border-radius:30px 30px 30px 30px;
+  margin-top: -304px;
+  border-radius:15px;
   
 }
 
@@ -655,9 +660,9 @@ footer.footer-distributed ,a {
   margin: auto;
   overflow: hidden;
   margin-left: 85%;
-  margin-top: -32%;
+  margin-top: 1%;
   box-sizing: content-box;
-  border-radius: 19px;
+  border-radius: 15px;
 }
 
 
@@ -683,7 +688,7 @@ footer.footer-distributed ,a {
   column-gap: 12px;
   font-size: 18px;
   margin-top: -14%;
-  margin-left: 14%;
+  margin-left: 12%;
 }
 
 .leagues img{
@@ -696,14 +701,14 @@ footer.footer-distributed ,a {
 }
 
 .leagues .flag {
-  width: 9%;
-  height: 3%;
+  width: 8%;
+  height: 12%;
   object-fit: cover;
-  border-radius: 50%;
   margin: 0 auto;
   margin-left: 7%;
   margin-top: -15%;
 }
+
 
 .leagues .content-table {
   border-collapse: collapse;

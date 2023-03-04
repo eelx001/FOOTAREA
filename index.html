@@ -74,12 +74,11 @@
   border:0px;
   }
   .container1{
-    width: 69%;
+    width: 67%;
     padding: 5%;
     background-color:#ffffff11!important;
     color: #ffffff;
-    border-radius:30px 30px 30px 30px;
-    
+    border-radius:15px;
     font-family: 'Oswald', sans-serif;
   }
   
@@ -311,63 +310,55 @@ td{
         <br>
         <div class="navigation">
             <ul>
-           
-            <a href="#" class="active" >Home</a>
+            <a href="#" class="active">Home</a>
             <a href="#" target="">News</a>
             <a href="#" target="">Matches</a>
             <a href="#" target="">About us</a>
             <a href="#" target="">Contact us</a>
           </ul>
-          
         </div>
-       
+        
+
+
+
         <div class="container1">
-          
-          <h2>Today Matches   <a href="#" class="see">&nbsp;&nbsp;see more</a></h2>
-           
-            
+          <h2>Today Matches<a href="#" class="see">&nbsp;&nbsp;see more</a></h2>
             <div  id="ty">
-              
-              <table class="tableau table-hover">
+              <table class="tableau table-hover" id="tablelive">
                 <thead>
                   <tr>
                     <th>
-                      <div class="match-header">
-                      <div class="match-tournament"><img src="https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg" />England - Premier League</div>
-                      </div>
+                    <div class="match-header">
+                    <div class="match-tournament"><img src="4.jpg" />England - Premier League</div>
+                    </div>
                     </th>
                   </tr>
-                </thead>
-                <tbody id="tmatch">
+                  </thead>
+                  
+              </table>
+              <table class="tableau table-hover" id="tablelaliga">
+                <thead>
                   <tr>
-                    <td>
-                      <div class="matche">
-                      <div class="match-content">
-                          <div class="team team--home">
-                            <div class="team-logo">
-                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg"/>
-                            </div>
-                            <h2 class="team-name">Man United</h2>
-                          </div>
-                          <div class="match-details">
-                            <strong>17:30</strong>
-                            <div class="match-score">
-                              <span class="match-score-number">3</span>
-                              <span class="match-score-divider">-</span>
-                              <span class="match-score-number">1</span>
-                            </div>
-                            <div class="match-time-lapsed">72'</div>
-                          </div>
-                          <div class="team-away">
-                            <div class="away-logo">
-                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" /></div>
-                              <h2 class="team-awayname">Man United</h2>
-                          </div>
-                        </div>
-                        </div>
-                    </td>
+                    <th>
+                    <div class="match-header">
+                    <div class="match-tournament"><img src="4.jpg" />England - Premier League</div>
+                    </div>
+                    </th>
                   </tr>
-                </tbody>
+                  </thead>
+                  
+              </table>
+              <table class="tableau table-hover" id="tableseriea">
+                <thead>
+                  <tr>
+                    <th>
+                    <div class="match-header">
+                    <div class="match-tournament"><img src="4.jpg" />England - Premier League</div>
+                    </div>
+                    </th>
+                  </tr>
+                  </thead>
+                  
               </table>
                </div>
       
@@ -414,7 +405,51 @@ td{
           </div>
 
 
-
+          <div class="slider-wrapper">
+            <div class="dots">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+            </div>
+            <div class="slides">
+              <h1>Trending News</h1>
+              <img src="1.jpg" alt="nature">
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="time">90 min about 2 hours ago</h4>
+              <a href="" class="sidesi"  ><h3 class="world">See More</h3></a>
+            </div>
+            <div class="slides">
+              <h1>Trending News</h1>
+              <img src="2.jpg" alt="nature">
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="time">90 min about 2 hours ago</h4>
+              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+            </div>
+            <div class="slides">
+              <h1>Trending News</h1>
+              <img src="3.jpg" alt="nature">
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="time">90 min about 2 hours ago</h4>
+              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+            </div>
+            <div class="slides">
+              <h1>Trending News</h1>  
+              <img src="1.jpg" alt="nature">
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="time">90 min about 2 hours ago</h4>
+              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+            </div>
+            <div class="slides">
+              <h1>Trending News</h1>
+              <img src="1.jpg" alt="nature">
+              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <h4 class="time">90 min about 2 hours ago</h4>
+              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
+            </div>
+          </div>
+          
 
 
           <div class="slider-league">
@@ -428,8 +463,8 @@ td{
             <div class="leagues">
               <h1>Premier League</h1>
               <img src="5.png" alt="nature">
-              <img class="flag" src="6.png" alt="nature">
-              <h1 class="league">Morocco</h1>
+              <img class="flag" src="https://cdn-icons-png.flaticon.com/128/323/323270.png" alt="nature">
+              <h1 class="league">England</h1>
               <table class="content-table" id=league-table>
                 <thead class="thead">
                   <tr>
@@ -441,9 +476,6 @@ td{
                   </tr>
                 </thead>
                 <tbody class="tbody" id="tb">
-
-
-
                 </tbody>
               </table>    
             </div>
@@ -458,8 +490,8 @@ td{
             <div class="leagues">
               <h1>Premier League</h1>
               <img src="5.png" alt="nature">
-              <img class="flag" src="6.png" alt="nature">
-              <h1 class="league">Morocco</h1>
+              <img class="flag" src="https://cdn-icons-png.flaticon.com/512/8363/8363059.png" alt="nature">
+              <h1 class="league">Spain</h1>
               <table class="content-table">
                 <thead>
                   <tr>
@@ -560,7 +592,7 @@ td{
 
 
 
-          <br>
+
 
 <footer class="footer-distributed">
 
@@ -616,55 +648,9 @@ td{
   </div>
 
 </footer>
-           
-       
 
 
-<div class="slider-wrapper">
-  <div class="dots">
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-    <div class="dot"></div>
-  </div>
-  <div class="slides">
-    <h1>Trending News</h1>
-    <img src="1.jpg" alt="nature">
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <h4 class="time">90 min about 2 hours ago</h4>
-    <a href="" class="sidesi"  ><h3 class="world">See More</h3></a>
-  </div>
-  <div class="slides">
-    <h1>Trending News</h1>
-    <img src="2.jpg" alt="nature">
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <h4 class="time">90 min about 2 hours ago</h4>
-    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-  </div>
-  <div class="slides">
-    <h1>Trending News</h1>
-    <img src="3.jpg" alt="nature">
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <h4 class="time">90 min about 2 hours ago</h4>
-    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-  </div>
-  <div class="slides">
-    <h1>Trending News</h1>  
-    <img src="1.jpg" alt="nature">
-    <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <h4 class="time">90 min about 2 hours ago</h4>
-    <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-</div>
-<div class="slides">
-  <h1>Trending News</h1>
-  <img src="1.jpg" alt="nature">
-  <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-  <h4 class="time">90 min about 2 hours ago</h4>
-  <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-</div>
 
-</div>
 
 
 
@@ -672,7 +658,7 @@ td{
 
 
 </body>
-<script src=""></script>
+
 <script>
     $(".theme-switch").on("click", () => {
   $("body").toggleClass("light-theme");

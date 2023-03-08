@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		//'X-RapidAPI-Key': 'dd69c349d0mshbee3f418d4f4712p1ad8a1jsnf559438e2047',
+		'X-RapidAPI-Key': '0302b4df49mshfb0c8057df4ab4ap1269c0jsnd9fffe7d1673',
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 		
 	}
@@ -220,7 +220,7 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 					const options4 = {
 						method: 'GET',
 						headers: {
-							'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
+							'X-RapidAPI-Key': '04dfc0fa29mshd62f5282542f24bp1d4da4jsn22906914470b',
 							'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 						}
 					};
@@ -248,14 +248,14 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 								  <td>
 									<div class="matche">
 									<div class="match-content">
+
 										<div class="team team--home">
 										  <div class="team-logo">
 											<img src="${data[0][" Matchday 27 "][i].homeLogo}"/>
 										  </div>
-										  <h2 class="team-name">${data[0][" Matchday 27 "][i].homeTeam}</h2>
+										  <div class="team-name">${data[0][" Matchday 27 "][i].homeTeam}</div>
 										</div>
 										<div class="match-details">
-										  <strong></strong>
 										  <div class="match-score">
 											<span class="match-score-number"></span>
 											<span class="match-score-divider"></span>
@@ -266,8 +266,8 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 										<div class="team-away">
 										  <div class="away-logo">
 											<img src="${data[0][" Matchday 27 "][i].awayLogo}" /></div>
-											<h2 class="team-awayname">${data[0][" Matchday 27 "][i].awayTeam}</h2>
 										</div>
+										<div class="team-awayname">${data[0][" Matchday 27 "][i].awayTeam}</div>
 									  </div>
 									  </div>
 								  </td>

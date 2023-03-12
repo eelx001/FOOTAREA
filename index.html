@@ -14,160 +14,25 @@
 </head>
 <body>
 
-<style>
-  .sidebar {
-    background-color:#ffffff11!important;
-    height: auto;
-    position: absolute;
-    top: 20%;
-    left: 0;
-    z-index: 0;
-    padding-top:50px;
-   
-    border-radius:30px 30px 30px 30px;
-    text-align: left;
-    width: 259px;
-    left: 2%;
-
-    box-sizing: border-box;
-  
-  }
-  
-  
-
-  .sidebar a {
-    color: #ffffff;
-    text-decoration: none;
-    display: block;
-    padding: 10px 20px;
-    font-weight:0;
-    font-family: 'Oswald', sans-serif;
-    border: #15161600 3px  30px 30px 0px 0px;
-    font-size: 120%;
-  }
-
-  .sidebar a:hover,
-  .sidebar a.active {
-    background-color: #61616138 !important;
-    color: #ffffff !important;
-    border-radius: 15px !important; 
-  }
- 
-  .sidebar-heading{
-    font-family: 'Oswald', sans-serif;
-    
-    letter-spacing:0px;
-    color: #ffffff;
-    padding-left:15px;
-    margin-top: -10%;
-    
-  }
-
-
-  .list-group-item,a{
-    background-color: #00000000 !important;
-    
-  }
-  .list-group-item {
-  position: relative;
-  display: block;
-  border:0px;
-  }
-  .container1{
-    width: 67%;
-    padding: 5%;
-    background-color:#ffffff11!important;
-    color: #ffffff;
-    border-radius:15px;
-    font-family: 'Oswald', sans-serif;
-  }
-  
-  .sus{
-    background-color: #ffffff00;
-  }
-
- 
-  .aa{
-        color: #ffffff;
-        left: 100%;
-        font-size: 80%;
-      }
-      .aa:hover{
-        color: #70B247;
-      }
-      .light-theme .sus{
-        color: #000000; 
-      }
-      .light-theme .aa:hover{
-        color: #70B247; 
-      }
-      .light-theme .aa{
-        color: #000000;
-      }
-      .see{
-        font-size: 50%;
-        color: #70B247;
-        
-      }
-      .favdark{
-            margin-top:-310px ;
-            margin-left:10%;
-            visibility: hidden;
-            
-          }
-
-      .favlight{
-            margin-top:-310px ;
-            margin-left:10%;
-            visibility: visible;
-            
-      }
-      .ooi{
-        position: absolute;
-      }
-      .light-theme .leagues {
-
-        background-color: white;
-        color: #000000;
-      }
-      .light-theme .leagues h1{
-        color:black;
-      }
-      
-td:hover{
-  background-color: rgba(109, 109, 109, 0.308);
-  color:white;
-}
-td{
-  border-radius: 25px;
-}
-
-
-</style>
-
-
-
-
-
     <div class="container">
         <div class="theme-switch">
-        <div class="switch"></div>
+        <div class="switch">
         </div>
-        <br>
+        </div>
         <div class="navigation">
             <ul>
             <a href="#" class="active">Home</a>
-            <a href="/news.html" target="">News</a>
-            <a href="#" target="">Matches</a>
-            <a href="/about.html" target="">About us</a>
-            <a href="#" target="">Contact us</a>
+            <a href="/news.html">News</a>
+            <a href="#">Matches</a>
+            <a href="/about.html">About us</a>
+            <a href="#">Contact us</a>
           </ul>
         </div>
         
 
 
 
-        <div class="container1">
+        <!-- <div class="container1">
           <h2>Today Matches<a href="#" class="see">&nbsp;&nbsp;see more</a></h2>
             <div  id="ty">
               <table class="tableau table-hover" id="tablelive">
@@ -202,42 +67,39 @@ td{
            
 
       </div>
-    <br>
+     -->
     
- <div class="d-flex" id="">
+     
+     <div class="d-flex">
+      <div class="sidebar">
+      <div class="logo">
+          <span href="" class="ooi">
+            <img href="index.html" src="/fav.png" class="favdark"  alt="Footarea" srcset="">
+            <img href="index.html" src="/favlight.png" class="favlight"  alt="Footarea" srcset="">
+          </span>
+      </div>
 
-  <div class="bg-dark sidebar" id="">
-         
-    <div class="sidebar-heading"> <h3> Top Leagues</h3></div>
-    <span href="" class="ooi"><img href="index.html" src="/fav.png" class="favdark" width="105%" alt="Footarea" srcset=""><img href="index.html" src="/favlight.png" class="favlight" width="105%" alt="Footarea" srcset=""></span>
-    <br>  
-    
-            
-            <div class="list-group ">
-            <a href="#"  id="lc" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/530.png" width="25"> Botola Pro</a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"  width="27"> Premier Leagues</a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/42.png"  width="25"> Champions Leagues</a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"  width="25"> LaLiga</a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/54.png" width="25"> Bundesliga</a>
-            <a href="#" class="list-group-item list-group-item-action">
-              <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png" width="25"> Serie</a>
-            <br>  
-            
-
-
-
-            </div>
-
-           
-
-
-          </div>
-          </div>
+        <div class="sidebar-heading">Top Leagues</div>
+        <div class="list-group">
+          <a href="#"  class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/530.png" width="25">Botola Pro</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"  width="27">Premier League</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/42.png"  width="25">Champions Leagues</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"  width="25">LaLiga</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/54.png" width="25">Bundesliga</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png" width="25">Serie A</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/57.png" width="25">Eredivisie</a>
+          <a href="#" class="list-group-item list-group-item-action">
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/53.png" width="25">Ligue 1</a> 
+        </div>
+        </div>
+        </div>
 
 
           <div class="slider-wrapper">

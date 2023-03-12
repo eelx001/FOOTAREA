@@ -9,9 +9,162 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link rel="shortcut icon" href="favico.png">
     <link rel="stylesheet" href="main.css">
-    <title></title>
+    
+    <title>FA</title>
 </head>
+<style>
+  
+.match {
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	width: 700px;
+	border-radius: 5px;
+	box-shadow: 0 0 2px 0 rgba(#303030, 0.1), 0 4px 4px 0 rgba(#303030, 0.1);
+    margin-top: 15%;
+    border-radius: 2%;
+}
+
+
+
+.match-header {
+	display: flex;
+	padding: 5px;
+	border-bottom: 2px solid rgba(#303030, 0.1);
+}
+
+
+
+.match-tournament {
+	display: flex;
+	align-items: center;
+	font-weight: 100;
+    font-size: 15px;
+}
+
+.match-tournament img {
+    width: 25px;
+    margin-right: 12px;
+}
+
+.table {
+    width: 98%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.match .table td {
+    height: 1px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.match-content {
+    display: flex;
+   
+    margin-left: 55px;
+}
+
+.team {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    margin-left: 17%;
+}
+
+.team-logo {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: -5%;
+}   
+
+.team-logo {
+    width: 50px;
+}
+
+
+.team-name {
+    font-size: 15px;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.match-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 3%;
+}
+
+.match-details strong {
+    font-size: 15px;
+    color: #7F8487;
+}
+
+.match-score {
+    display: flex;
+    align-items: center;
+}
+
+.match-score-number {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 0.5;
+}
+
+.match-score-divider {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 0.2;
+    color: #ffffff;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.match-time-lapsed {
+    color: #DF9443;
+    font-size: 14px;  
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.team-away {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-left: 2%;
+}
+
+.away-logo {
+    width: 50px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10%;
+    margin-top: -5%;
+}   
+
+
+
+.team-awayname {
+    font-size: 15px;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+</style>
 <body>
 
     <div class="container">
@@ -19,6 +172,7 @@
         <div class="switch">
         </div>
         </div>
+        <br>
         <div class="navigation">
             <ul>
             <a href="#" class="active">Home</a>
@@ -32,33 +186,120 @@
 
 
 
-        <!-- <div class="container1">
+        <div class="container1">
           <h2>Today Matches<a href="#" class="see">&nbsp;&nbsp;see more</a></h2>
-            <div  id="ty">
-              <table class="tableau table-hover" id="tablelive">
+            <div id="ty">
+              <table class="table" id="tablelive">
                 <thead>
                   <tr>
                     <th>
-                    <div class="match-header">
-                    <div class="match-tournament"><img src="https://cdn-icons-png.flaticon.com/128/323/323270.png" />England - Premier League</div>
-                    </div>
+                      <div class="match-header">
+                      <div class="match-tournament"><img src="https://upload.wikimedia.org/wikipedia/en/b/be/Flag_of_England.svg" />England - Premier League</div>
+                      </div>
                     </th>
                   </tr>
-                  </thead>
-                  
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="matche">
+                        <div class="match-content">
+                          <div class="team team--home">
+                            <div class="team-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg"/>
+                            </div>
+                            <h2 class="team-name">Man United</h2>
+                          </div>
+                          <div class="match-details">
+                            <strong>17:30</strong>
+                            <div class="match-score">
+                              <span class="match-score-number">3</span>
+                              <span class="match-score-divider">-</span>
+                              <span class="match-score-number">1</span>
+                            </div>
+                            <div class="match-time-lapsed">72'</div>
+                          </div>
+                          <div class="team-away">
+                            <div class="away-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" /></div>
+                              <h2 class="team-awayname">Man United</h2>
+                          </div>
+                        </div>
+                        </div>
+                        
+                        
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="matche">
+                        <div class="match-content">
+                          <div class="team team--home">
+                            <div class="team-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg"/>
+                            </div>
+                            <h2 class="team-name">Man United</h2>
+                          </div>
+                          <div class="match-details">
+                            <strong>17:30</strong>
+                            <div class="match-score">
+                              <span class="match-score-number">3</span>
+                              <span class="match-score-divider">-</span>
+                              <span class="match-score-number">1</span>
+                            </div>
+                            <div class="match-time-lapsed">72'</div>
+                          </div>
+                          <div class="team-away">
+                            <div class="away-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" /></div>
+                              <h2 class="team-awayname">Man United</h2>
+                          </div>
+                        </div>
+                        </div>
+                      </td>
+                    
+                  </tr>
               </table>
-              <table class="tableau table-hover" id="tablelaliga">
+              <table class="table" id="tablelive">
                 <thead>
                   <tr>
                     <th>
-                    <div class="match-header">
-                    <div class="match-tournament"><img src="https://cdn-icons-png.flaticon.com/512/8363/8363059.png" />Spain - LaLiga</div>
-                    </div>
+                      <div class="match-header">
+                      <div class="match-tournament"><img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Bandera_de_Espa%C3%B1a.svg" />England - Premier League</div>
+                      </div>
                     </th>
                   </tr>
-                  </thead>
-                  
-                  
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="matche">
+                      <div class="match-content">
+                          <div class="team team--home">
+                            <div class="team-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg"/>
+                            </div>
+                            <h2 class="team-name">Man United</h2>
+                          </div>
+                          <div class="match-details">
+                            <strong>17:30</strong>
+                            <div class="match-score">
+                              <span class="match-score-number">3</span>
+                              <span class="match-score-divider">-</span>
+                              <span class="match-score-number">1</span>
+                            </div>
+                            <div class="match-time-lapsed">72'</div>
+                          </div>
+                          <div class="team-away">
+                            <div class="away-logo">
+                              <img src="https://resources.premierleague.com/premierleague/badges/t1.svg" /></div>
+                              <h2 class="team-awayname">Man United</h2>
+                          </div>
+                        </div>
+                        </div>
+                    </td>
+                  </tr>
               </table>
                </div>
       
@@ -67,7 +308,7 @@
            
 
       </div>
-     -->
+    
     
      
      <div class="d-flex">
@@ -82,21 +323,21 @@
         <div class="sidebar-heading">Top Leagues</div>
         <div class="list-group">
           <a href="#"  class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/530.png" width="25">Botola Pro</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/530.png" width="25">&nbsp;&nbsp; Botola Pro</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"  width="27">Premier League</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/47.png"  width="27">&nbsp;&nbsp; Premier League</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/42.png"  width="25">Champions Leagues</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/42.png"  width="25">&nbsp;&nbsp; Champions Leagues</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"  width="25">LaLiga</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/87.png"  width="25">&nbsp;&nbsp; LaLiga</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/54.png" width="25">Bundesliga</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/54.png" width="25">&nbsp;&nbsp; Bundesliga</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png" width="25">Serie A</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/dark/55.png" width="25">&nbsp;&nbsp; Serie A</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/57.png" width="25">Eredivisie</a>
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/57.png" width="25">&nbsp;&nbsp; Eredivisie</a>
           <a href="#" class="list-group-item list-group-item-action">
-            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/53.png" width="25">Ligue 1</a> 
+            <img src="https://images.fotmob.com/image_resources/logo/leaguelogo/53.png" width="25">&nbsp;&nbsp; Ligue 1</a> 
         </div>
         </div>
         </div>
@@ -176,14 +417,6 @@
                 </tbody>
               </table>    
             </div>
-
-
-
-
-
-
-
-
             <div class="leagues">
               <h1>Premier League</h1>
               <img src="5.png" alt="nature">

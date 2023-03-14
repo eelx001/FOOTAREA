@@ -341,6 +341,9 @@ section {
   font: bold 16px sans-serif;
   padding: 55px 50px;
   border-radius:70px 70px 0px 0px;
+  top: 1400px;
+  position: relative;
+  transform: translate(50px, 50px);
 }
 
 
@@ -596,15 +599,15 @@ section {
 
 
 .slider-wrapper {
-  width: 24%;
+  width: 19.5%;
   height: 410px;
   display: flex;
-  position: relative;
+  position: absolute;
   margin: auto;
   overflow: hidden;
-  margin-left: 85%;
+  margin-left: 78%;
   border-radius:15px;
-  margin-top: -20%;
+  top: 150px;
 }
 
 .slides{
@@ -814,14 +817,14 @@ footer.footer-distributed ,a {
 
 
 .slider-league{
-  width: 24%;
+  width: 19.5%;
   height:1600px;
   display: flex;
-  position: relative;
+  position: absolute;
   margin: auto;
   overflow: hidden;
-  margin-left: 85%;
-  margin-top: 1%;
+  margin-left: 78%;
+  top: 580px;
   box-sizing: content-box;
   border-radius: 15px;
 }

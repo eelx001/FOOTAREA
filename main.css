@@ -637,8 +637,8 @@ section {
 }
 
 .slides .description {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight:100;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -689,36 +689,201 @@ section {
   cursor: pointer;
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1064px) {
   .slider-wrapper{
     width: 100%;
     display: none;
   }
-}
-
-@media screen and (max-width:1000px) {
-  .sidebar{
+  .container1{
     width: 100%;
-    display: none;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:100px;
   }
 }
-@media screen and (max-width:1000px) {
+
+@media screen and (max-width:1064px) {
   .leagues{
     width: 100%;
     display: none;
   }
- 
-}
-
-@media screen and (max-width:1000px) {
-  .drop{
+ .drop{
     width: 100%;
     display: none;
   }
- 
+   .sidebar{
+    width: 100%;
+    display: none;
+  }
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:120px;
+  }
 }
- 
 
+
+
+@media screen and (max-width:991px) {
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:55px;
+  }
+}
+@media screen and (max-width:767px) {
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:0px;
+  }
+}
+@media screen and (max-width:600px) {
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    align-items: center;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:0px;
+  }
+}
+@media screen and (max-width:575px)  {
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    position:absolute;
+    margin-left: 7%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:0px;
+  }
+}
+@media screen and (max-width:530px){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    position:absolute;
+    margin-left: 10%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:0px;
+  }
+}
+@media screen and (max-width:488px){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    position:absolute;
+    margin-left: 14%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:0px;
+  }
+}
+
+@media screen and (max-width:450px){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    margin-left: 17%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:-20px;
+  }
+}
+@media screen and (max-width:420px){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% ;
+    margin-right: -10%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:-20px;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:375){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    margin-left: 0%;
+    font-size: 20%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:-20px;
+    
+  }
+  
+}
+@media screen and (max-width:450px){
+  .slider-wrapper{
+    width: 100%;
+    display: none;
+  }
+  .container1{
+    width: 100% auto;
+    margin-left: 17%;
+  }
+  .match-content{
+    width: 100%;
+    margin-left:-20px;
+  }
+}
 /*######################################################################*/
 
 

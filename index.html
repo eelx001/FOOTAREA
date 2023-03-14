@@ -26,12 +26,15 @@
     border-radius: 2%;
 }
 
+.ty{
+  position: relative;
+}
 
 
 .match-header {
 	display: flex;
 	padding: 5px;
-	border-bottom: 2px solid rgba(#303030, 0.1);
+	border-bottom: 0px solid rgba(#303030, 0.1);
 }
 
 
@@ -154,14 +157,26 @@
     margin-right: 10%;
     margin-top: -5%;
 }   
-
-
-
+.light-theme .matche {
+  color:black ;
+ }
+.light-theme .match-header{
+ color: black;
+}
+.light-theme  td:hover ,h4{
+  background-color: rgba(0, 0, 0, 0.103);
+  
+}
 .team-awayname {
     font-size: 15px;
     font-weight: 100;
     white-space: nowrap;
 }
+@media screen and (max-width:1199px) {
+  .match-content{
+    width: 52%;
+  }
+} 
 
 </style>
 <body>
@@ -350,43 +365,46 @@
               <div class="dot"></div>
               <div class="dot"></div>
             </div>
-            <div class="slides">
-              <h1>Trending News</h1>
-              <img src="1.jpg" alt="nature">
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <h4 class="time">90 min about 2 hours ago</h4>
-              <a href="" class="sidesi"  ><h3 class="world">See More</h3></a>
-            </div>
-            <div class="slides">
-              <h1>Trending News</h1>
-              <img src="2.jpg" alt="nature">
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <h4 class="time">90 min about 2 hours ago</h4>
-              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-            </div>
-            <div class="slides">
-              <h1>Trending News</h1>
-              <img src="3.jpg" alt="nature">
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <h4 class="time">90 min about 2 hours ago</h4>
-              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-            </div>
-            <div class="slides">
-              <h1>Trending News</h1>  
-              <img src="1.jpg" alt="nature">
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <h4 class="time">90 min about 2 hours ago</h4>
-              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-            </div>
-            <div class="slides">
-              <h1>Trending News</h1>
-              <img src="1.jpg" alt="nature">
-              <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <h4 class="time">90 min about 2 hours ago</h4>
-              <a href="" class="sidesi" ><h3 class="world">See More</h3></a>
-            </div>
+            
+              <div class="slides">
+                <h1>Trending News</h1>
+                <img src="" id="inew">
+                <p class="description" id="pnew" ></p>
+                <h4 class="time" id="newtime"></h4>
+                <a href="" class="sidesi" id="seemo" ><h3 class="world">See More</h3></a>
+              </div>
+              <div class="slides">
+                <h1>Trending News</h1>
+                <img src="" id="inew1">
+                <p class="description" id="pnew1" ></p>
+                <h4 class="time" id="newtime1"></h4>
+                <a href="" class="sidesi" id="seemo1" ><h3 class="world">See More</h3></a>
+              </div>
+              <div class="slides">
+                <h1>Trending News</h1>
+                <img src="" id="inew2">
+                <p class="description" id="pnew2" ></p>
+                <h4 class="time" id="newtime2"></h4>
+                <a href="" class="sidesi" id="seemo2" ><h3 class="world">See More</h3></a>
+              </div>
+              <div class="slides">
+                <h1>Trending News</h1>
+                <img src="" id="inew3">
+                <p class="description" id="pnew3" ></p>
+                <h4 class="time" id="newtime3"></h4>
+                <a href="" class="sidesi" id="seemo3" ><h3 class="world">See More</h3></a>
+              </div>
+              <div class="slides">
+                <h1>Trending News</h1>
+                <img src="" id="inew4">
+                <p class="description" id="pnew4" ></p>
+                <h4 class="time" id="newtime4"></h4>
+                <a href="" class="sidesi" id="seemo4" ><h3 class="world">See More</h3></a>
+              </div>
+              
+            
           </div>
-          
+
 
 
           <div class="slider-league">
@@ -588,6 +606,17 @@
 
 </body>
 
+
+
+
+
+
+
+
+
+
+
+<script src="/news.js"></script>
 <script>
     $(".theme-switch").on("click", () => {
   $("body").toggleClass("light-theme");

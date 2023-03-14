@@ -286,10 +286,50 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 					
 								})					
 							
+
+
+
 								
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+								
 			const leagues = document.querySelectorAll('.leagues');
 			const drops = document.querySelectorAll('.drop');
 			let index = 0;

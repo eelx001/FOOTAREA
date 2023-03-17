@@ -1,7 +1,7 @@
 const options = {
 	method: 'GET',
 	headers: {
-		// 'X-RapidAPI-Key': '0261d08343msh41855b1773a50cbp13cb10jsn9bd86de4cc89',
+		'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
 		'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 		
 	}
@@ -220,7 +220,7 @@ fetch('https://football98.p.rapidapi.com/laliga/table', options).then( Response 
 					const options4 = {
 						method: 'GET',
 						headers: {
-							'X-RapidAPI-Key': '04dfc0fa29mshd62f5282542f24bp1d4da4jsn22906914470b',
+							'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
 							'X-RapidAPI-Host': 'football98.p.rapidapi.com'
 						}
 					};

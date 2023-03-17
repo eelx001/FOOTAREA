@@ -1,5 +1,5 @@
 
-const options = {
+const options7 = {
 	method: 'GET',
 	headers: {
 		'X-RapidAPI-Key': 'df56831299mshed6ae27403e381ap10f431jsn5185e8eada5e',
@@ -7,7 +7,7 @@ const options = {
 	}
 };
 
-fetch('https://football98.p.rapidapi.com/laliga/news', options).then( Response => {return Response.json()}).then(data=>{
+fetch('https://football98.p.rapidapi.com/laliga/news', options7).then( Response => {return Response.json()}).then(data=>{
     
 console.log(data[0]);
 
